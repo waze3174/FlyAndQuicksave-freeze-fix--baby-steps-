@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>FlyAndQuicksave</AssemblyName>
+    <RootNamespace>BabyStepsQuickSave</RootNamespace>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <DebugType>none</DebugType>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <!-- Windows path of the game as seen from inside the Proton prefix -->
+    <GameDir>Z:\run\media\deck\Steam deck sd\steamapps\common\Baby Steps</GameDir>
+    <ML>$(GameDir)\MelonLoader</ML>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(ML)\net6\MelonLoader.dll" Private="false" />
+    <Reference Include="$(ML)\net6\0Harmony.dll" Private="false" />
+    <Reference Include="$(ML)\net6\Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="$(ML)\Il2CppAssemblies\Il2Cppmscorlib.dll" Private="false" />
+    <Reference Include="$(ML)\Il2CppAssemblies\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="$(ML)\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll" Private="false" />
+    <Reference Include="$(ML)\Il2CppAssemblies\UnityEngine.PhysicsModule.dll" Private="false" />
+    <Reference Include="$(ML)\Il2CppAssemblies\UnityEngine.AnimationModule.dll" Private="false" />
+    <Reference Include="$(ML)\Il2CppAssemblies\Il2CppCoreGameLogic.dll" Private="false" />
+    <Reference Include="$(ML)\Il2CppAssemblies\Il2CppRuntimeTools.dll" Private="false" />
+  </ItemGroup>
+</Project>
